@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+
+	"name": "God To Eris",
+	"short name": "god2eris",
+	"version": "2.1",
+	"description": "She replaces the text 'God' with 'Eris'.",
+	"author": "DDdW",
+
+
+	"icons": {
+		"16": "apple16.png",
+		"32": "apple32.png",
+		"48": "apple48.png",
+		"128": "apple128.png"
+	},
+
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"all_frames": true,
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
